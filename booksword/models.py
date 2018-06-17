@@ -6,7 +6,7 @@
 import os
 import pickle
 import collections
-from . import helpers
+from helpers import *
 
 WORDS = []
 WORD_TUPLES = []
@@ -22,13 +22,13 @@ def train_models(corpus, model_name="models_compressed.pkl"):
 	'''
 
 	global WORDS
-	WORDS = helpers.re_split(corpus)
+	WORDS = re_split(corpus)
 
 	global WORDS_MODEL
 	WORDS_MODEL = collections.Counter(WORDS)
 
 	global WORD_TUPLES
-	WORD_TUPLES = list(helpers.chunks(WORDS, 2))
+	WORD_TUPLES = list(chunks(WORDS, 2))
 
 	global WORD_TUPLES_MODEL
 	WORD_TUPLES_MODEL = {first: collections.Counter() for first, second in WORD_TUPLES}
