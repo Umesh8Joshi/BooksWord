@@ -1,0 +1,14 @@
+A sample PDF we will use to check the module which we made. Module will take this file as input 
+through command line arguments now and it will convert this into a txt file. This txt fil
+e will be used 
+for analysis of 
+the words.
+ 
+This is random data
+ 
+Python is great
+ 
+Import this
+ 
+Zen of Python
+ 
