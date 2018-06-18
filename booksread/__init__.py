@@ -3,7 +3,7 @@
 """
 from bottle import route, run, debug
 from booksword import models
-from .booksread import predict
+from .booksword import predict
 
 def run_server(port_num=8080):
 	models.load_models()
